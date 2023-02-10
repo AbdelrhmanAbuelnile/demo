@@ -96,6 +96,61 @@
                 </button>
             </div>
         </div>
+
+        <div class="apiCOntainer">
+
+            <div class="handleApi">
+                <select name="apis" id="api">
+                    <option value="0">select api</option>
+                    <option value="Lorem, ipsum.">Lorem, ipsum.</option>
+                    <option value="Lorem, ipsum.">Lorem, ipsum.</option>
+                    <option value="Lorem, ipsum.">Lorem, ipsum.</option>
+                    <option value="Lorem, ipsum.">Lorem, ipsum.</option>
+                </select>
+                <div class="do-somthing">
+                    <button>reconnect</button>
+                    <button>disconnect</button>
+                </div>
+            </div>
+
+            <div class="password">
+                <div class="change-password">
+                    <input type="password" class="inputPass" name="currntPassword" id="current">
+                    <input type="password" class="inputPass" name="newPassword" id="new">
+                    <input type="password" class="inputPass" name="confirmPassword" id="confirm">
+                </div>
+            </div>
+            <button type="submit" id="submit">submit</button>
+
+        </div>
+
+        <div class="price">
+            
+            <input type="range" name="price" id="price" value="100" min="100" max="5000">
+            <p id="cost">price per month: $100</p>
+
+            <div class="points">
+                <button>Start</button>
+                <ul>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                </ul>
+            </div>
+        </div>
+
     </main>
+
+    <script>
+        const price = document.getElementById("price");
+        const cost = document.getElementById("cost"); 
+        price.addEventListener("input", () => {
+            cost.innerText=`price per month: $${price.value}`
+        })
+    </script>
 </body>
 </html>

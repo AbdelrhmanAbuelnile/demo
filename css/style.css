@@ -61,6 +61,128 @@ button:hover {
     background-color: #a444f5;
 }
 
+.apiCOntainer {
+    margin: 20px 0;
+    width: 80%;
+    padding: 20px;
+    max-height: 50%;    
+    background-color: #555;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.handleApi {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    background-color: #0084ff;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+}
+
+.select select {
+    padding: 5px 10px; 
+    background-color: #00eafffc;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+}
+
+select option {
+    background-color: #00bacbfc;
+}
+
+.do-somthing button{
+    padding: 5px 10px;
+    background-color: #0084ff;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+#submit {
+    padding: 5px 10px;
+    background-color: #0084ff;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+.password {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.change-password {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.change-password input{
+    outline: none;
+    border: none;
+    background-color: #329cff;
+    color: #111;
+    border-radius: 4px;
+    padding: 5px 10px;
+    max-width: 300px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.price {
+    margin: 20px 0;
+    width: 80%;
+    padding: 20px;
+    max-height: 50%;    
+    background-color: #555;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: #eee;
+}
+
+.points {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.points button{
+    padding: 5px 10px;
+    background-color: #0084ff;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 0;
+}
+
 @media only screen and (max-width: 450px){
     button{
         font-size: 16px;
